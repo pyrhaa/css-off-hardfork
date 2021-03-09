@@ -31,6 +31,155 @@ button {
 }
 
 /* ... Your turn! ... */
+/*navbar*/
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(128, 178, 56, 0.8);
+  margin-top: 0;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 5rem;
+  align-items: center;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+li:hover {
+  font-size: 2rem;
+  transform: rotate(10deg);
+}
+
+li:nth-of-type(even):hover {
+  transform: rotate(-10deg);
+}
+
+/*header*/
+
+header {
+  color: var(--orange);
+  text-shadow: white 3px 3px;
+  background-image: url(../img/blue-splash.png);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 6.5rem;
+  margin-bottom: 0;
+}
+
+/*main*/
+/*obtsacles section*/
+
+h2 {
+  text-align: center;
+  text-shadow: 4px 4px hsla(0, 0%, 0%, 0.2);
+  font-size: 7rem;
+  /* text-shadow: 2px 2px; */
+}
+
+main section {
+  /* display: flex;
+  justify-content: center;
+  text-align: center; */
+  padding: 3rem;
+  box-shadow: 0 10px hsla(0, 0%, 0%, 0.1) inset;
+  box-shadow: 0 -10px hsla(0, 0%, 0%, 0.1) inset;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  padding-top: 1rem;
+}
+
+.obstacles {
+  background-color: var(--orange);
+}
+
+.obstacles-group article {
+  background-color: var(--green);
+  border-radius: 20px;
+}
+
+/*prizes section*/
+.prizes {
+  background-color: var(--green);
+}
+
+.prizes-group article {
+  border: dashed var(--yellow);
+}
+/*apply section*/
+
+.apply {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* form {
+  display: flex;
+  flex-direction: column;
+} */
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: var(--orange);
+  border: hidden;
+  margin-bottom: 1rem;
+}
+
+::placeholder {
+  color: white;
+  font-size: 1.5rem;
+  font-family: Atma, sans-serif;
+}
+
+button {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: var(--yellow);
+  border: hidden;
+  font-size: 1.5rem;
+  text-shadow: 4px 4px hsla(0, 0%, 0%, 0.2);
+}
+
+/*footer*/
+footer {
+  font-size: 2rem;
+  color: black;
+  background-color: var(--yellow);
+  text-align: center;
+  padding: 3rem;
+  box-shadow: 0 10px hsla(0, 0%, 0%, 0.1) inset;
+}
 @media (min-width: 640px) {
 }
